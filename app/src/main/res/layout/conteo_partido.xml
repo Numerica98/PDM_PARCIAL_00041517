@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_fecha_y_hora_en_partido"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_fecha_en_partido"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_fecha_en_partido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="03/06/2019"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_hora_en_partido"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08:18"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_control_partido"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_control_equipo1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_nombre_equipo1_en_partido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/equipo_1"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_puntos_equipo1_en_partido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="50dp"/>
+
+            <Button
+                android:id="@+id/bt_1punto_equipo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/uno"/>
+
+            <Button
+                android:id="@+id/bt_2puntos_equipo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dos"/>
+
+            <Button
+                android:id="@+id/bt_3puntos_equipo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tres"/>
+
+        </LinearLayout>
+
+       <LinearLayout
+           android:id="@+id/ll_control_equipo2"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:orientation="vertical"
+           android:gravity="center">
+
+           <TextView
+               android:id="@+id/tv_nombre_equipo2_en_partido"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/equipo_2"
+               android:textSize="20dp"/>
+
+           <TextView
+               android:id="@+id/tv_puntos_equipo2_en_partido"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="0"
+               android:textSize="50dp"/>
+
+           <Button
+               android:id="@+id/bt_1punto_equipo2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/uno"/>
+
+           <Button
+               android:id="@+id/bt_2puntos_equipo2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/dos"/>
+
+           <Button
+               android:id="@+id/bt_3puntos_equipo2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/tres"/>
+
+       </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bt_finalizar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/bt_finalizo_partido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finalizar partido"/>
+
+    </LinearLayout>
+
+</LinearLayout>
