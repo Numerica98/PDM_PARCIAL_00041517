@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="25dp">
+
+    <TextView
+        android:id="@+id/tv_nombre_equipo1_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/equipo_1"
+        android:layout_margin="5dp"
+        android:textSize="@dimen/dimen_name_item"/>
+
+    <TextView
+        android:id="@+id/tv_vs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VS"
+        android:textSize="@dimen/dimen_name_item"/>
+
+    <TextView
+        android:id="@+id/tv_nombre_equipo2_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/equipo_2"
+        android:textSize="@dimen/dimen_name_item"
+        android:layout_margin="5dp"/>
+
+</LinearLayout>
