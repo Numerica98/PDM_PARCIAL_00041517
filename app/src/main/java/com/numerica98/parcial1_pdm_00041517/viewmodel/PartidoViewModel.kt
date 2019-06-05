@@ -25,6 +25,8 @@ class PartidoViewModel (app: Application) : AndroidViewModel(app) {
 
     fun getAll(): LiveData<List<Partido>> = repository.getAll()
 
+    //fun getPartido(): LiveData<Partido> = repository.getOne()
+
     fun delete()= repository.delete()
 
 }

@@ -6,14 +6,13 @@ import androidx.room.PrimaryKey
 
 @Entity (tableName = "partidos")
 data class Partido(
-    @ColumnInfo(name= "atributos")
-    val nombre_equipo1:String,
-    val nombre_equipo2:String,
-    val puntos_equipo1:Int,
-    val puntos_equipo2:Int,
-    val hora:String,
-    val fecha:String,
-    val ganador:String
+        @ColumnInfo(name= "nombre_equipo1") val nombre_equipo1:String,
+        @ColumnInfo(name= "nombre_equipo2") val nombre_equipo2:String,
+        @ColumnInfo(name= "puntos_equipo1") val puntos_equipo1:Int,
+        @ColumnInfo(name= "puntos_equipo2") val puntos_equipo2:Int,
+        @ColumnInfo(name= "hora") val hora:String,
+        @ColumnInfo(name= "fecha") val fecha:String,
+        @ColumnInfo(name= "ganador") val ganador:String
 ){
     @PrimaryKey (autoGenerate = true)
         val id:Int=0

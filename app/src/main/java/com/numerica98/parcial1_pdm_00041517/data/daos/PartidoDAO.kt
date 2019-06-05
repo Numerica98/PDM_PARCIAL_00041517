@@ -15,8 +15,8 @@ interface PartidoDAO {
     @Query("SELECT * FROM partidos") //Mostrar todos los registros, solo es para verificar que guarda todos los datos
     fun getAllPartidos(): LiveData<List<Partido>>
 
-    /*@Query("SELECT * FROM partidos WHERE id == idAConsultar") //Mostrar un elemento en especifico, arreglar
-    fun getPartido(idAConsultar: Int): LiveData<Partido>*/
+    @Query("SELECT * FROM partidos WHERE id =:idAConsultar") //Mostrar un elemento en especifico, arreglar
+    fun getPartido(idAConsultar: Int): LiveData<Partido>
 
     @Query("DELETE FROM partidos")
     fun delete()
