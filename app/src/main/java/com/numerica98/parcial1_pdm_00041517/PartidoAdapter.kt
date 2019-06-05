@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.item_partido.view.*
 class PartidoAdapter internal constructor(context:Context, val clickListener:(Partido)-> Unit): RecyclerView.Adapter<PartidoAdapter.PartidoViewHolder>(){
 
     private val inflater: LayoutInflater = LayoutInflater.from(context)
-    private var partidos = emptyList<Partido>() //CAmbia las copias por palabras
+    private var partidos = emptyList<Partido>()
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PartidoViewHolder {

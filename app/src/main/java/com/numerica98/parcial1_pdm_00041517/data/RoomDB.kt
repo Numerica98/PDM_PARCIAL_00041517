@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 import com.numerica98.parcial1_pdm_00041517.data.daos.PartidoDAO
 import com.numerica98.parcial1_pdm_00041517.data.entities.Partido
 
-@Database(entities = [Partido::class], version = 1, exportSchema = false)
+@Database(entities = [Partido::class], version = 2, exportSchema = false)
 abstract class RoomDB: RoomDatabase() {
     abstract fun partidoDao(): PartidoDAO
 
